@@ -29,10 +29,13 @@ public class SecurityConfig {
                         // Registrierung öffentlich
                         .requestMatchers("/api/users/**").permitAll()
                         .requestMatchers("/api/auth/login").permitAll()
+                        //Actuator öffentlich
+                        .requestMatchers("/actuator/**").permitAll()
+                        // Alles andere geschützt
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class)
-                .httpBasic(httpBasic->httpBasic.disable());
+                .httpBasic(httpBasic -> httpBasic.disable());
         return http.build();
     }
 

@@ -47,7 +47,8 @@ public class TransactionService {
     }
 
     public Transaction save(Transaction transaction) {
-            return repository.save(transaction);
+        log.info("Saving transaction {}", transaction.getTitle());
+        return repository.save(transaction);
     }
 
     public Transaction getById(Long id) {
