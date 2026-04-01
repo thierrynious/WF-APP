@@ -1,0 +1,35 @@
+2026-04-01T15:02:01.326+02:00  INFO 8804 --- [finanzapp] [main] c.f.finanzapp.FinanzappApplication       : Starting FinanzappApplication using Java 21.0.9 with PID 8804 (C:\Udemy Kurs Spring Boot\finanzapp\target\classes started by Dell in C:\Udemy Kurs Spring Boot\finanzapp)
+2026-04-01T15:02:01.329+02:00 DEBUG 8804 --- [finanzapp] [main] c.f.finanzapp.FinanzappApplication       : Running with Spring Boot v3.2.5, Spring v6.1.6
+2026-04-01T15:02:01.330+02:00  INFO 8804 --- [finanzapp] [main] c.f.finanzapp.FinanzappApplication       : No active profile set, falling back to 1 default profile: "default"
+2026-04-01T15:02:02.236+02:00  INFO 8804 --- [finanzapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-01T15:02:02.293+02:00  INFO 8804 --- [finanzapp] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 4 JPA repository interfaces.
+2026-04-01T15:02:02.863+02:00  INFO 8804 --- [finanzapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-04-01T15:02:02.871+02:00  INFO 8804 --- [finanzapp] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-01T15:02:02.872+02:00  INFO 8804 --- [finanzapp] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.20]
+2026-04-01T15:02:02.921+02:00  INFO 8804 --- [finanzapp] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-04-01T15:02:02.922+02:00  INFO 8804 --- [finanzapp] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1546 ms
+2026-04-01T15:02:03.012+02:00  INFO 8804 --- [finanzapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-01T15:02:03.180+02:00  INFO 8804 --- [finanzapp] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./data/finanzapp user=SA
+2026-04-01T15:02:03.181+02:00  INFO 8804 --- [finanzapp] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-01T15:02:03.189+02:00  INFO 8804 --- [finanzapp] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./data/finanzapp'
+2026-04-01T15:02:03.312+02:00  INFO 8804 --- [finanzapp] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-01T15:02:03.347+02:00  INFO 8804 --- [finanzapp] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-04-01T15:02:03.371+02:00  INFO 8804 --- [finanzapp] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-04-01T15:02:03.541+02:00  INFO 8804 --- [finanzapp] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-01T15:02:03.574+02:00  WARN 8804 --- [finanzapp] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-01T15:02:04.251+02:00  INFO 8804 --- [finanzapp] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-01T15:02:04.303+02:00  INFO 8804 --- [finanzapp] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01T15:02:04.596+02:00 DEBUG 8804 --- [finanzapp] [main] c.f.f.config.JwtAuthenticationFilter     : Filter 'jwtAuthenticationFilter' configured for use
+2026-04-01T15:02:04.707+02:00  INFO 8804 --- [finanzapp] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-01T15:02:05.012+02:00  INFO 8804 --- [finanzapp] [main] c.f.f.service.TransactionService         : FinanzApp gestartet | Max. Transaktionen: 500 | Währung: EUR
+2026-04-01T15:02:05.460+02:00  INFO 8804 --- [finanzapp] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 4 endpoint(s) beneath base path '/actuator'
+2026-04-01T15:02:05.499+02:00  INFO 8804 --- [finanzapp] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77199818, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72216f0b, org.springframework.security.web.context.SecurityContextHolderFilter@6d26b068, org.springframework.security.web.header.HeaderWriterFilter@54d93fce, org.springframework.web.filter.CorsFilter@3fa13835, org.springframework.security.web.authentication.logout.LogoutFilter@45b244c4, com.finanzmanager.finanzapp.config.JwtAuthenticationFilter@72b4ecb2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19a48bde, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6724f10e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78edbe01, org.springframework.security.web.access.ExceptionTranslationFilter@5d852761, org.springframework.security.web.access.intercept.AuthorizationFilter@4d76f990]
+2026-04-01T15:02:05.947+02:00  INFO 8804 --- [finanzapp] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-04-01T15:02:05.958+02:00  INFO 8804 --- [finanzapp] [main] c.f.finanzapp.FinanzappApplication       : Started FinanzappApplication in 4.996 seconds (process running for 5.774)
+2026-04-01T15:02:06.440+02:00  INFO 8804 --- [finanzapp] [RMI TCP Connection(1)-192.168.0.113] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-01T15:02:06.441+02:00  INFO 8804 --- [finanzapp] [RMI TCP Connection(1)-192.168.0.113] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-01T15:02:06.444+02:00  INFO 8804 --- [finanzapp] [RMI TCP Connection(1)-192.168.0.113] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-04-01T15:38:37.709+02:00  WARN 8804 --- [finanzapp] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m34s95ms367µs700ns).
+2026-04-01T15:40:26.232+02:00  INFO 8804 --- [finanzapp] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-01T15:40:26.235+02:00  INFO 8804 --- [finanzapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-01T15:40:26.447+02:00  INFO 8804 --- [finanzapp] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
